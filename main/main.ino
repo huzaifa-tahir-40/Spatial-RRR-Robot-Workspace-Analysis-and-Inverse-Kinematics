@@ -117,11 +117,11 @@ void loop()
   }
   else
   {
-    //Print the Unreachable points if all other conditions are false
+    //Point is unreachable if conditions aren't met
     Serial.println("ERROR! POSITION UNREACHABLE");
     Serial.println("ALL ANGLES");
 
-    //Print Points for all Angles
+    //Print all Angles
     Serial.print("q1_d = "); Serial.println(q1);
     Serial.print("q2_d = "); Serial.println(q2_d);
     Serial.print("q3_d = "); Serial.println(q3_d);
