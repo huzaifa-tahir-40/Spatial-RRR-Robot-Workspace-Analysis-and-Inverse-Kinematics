@@ -8,9 +8,9 @@ void ik_3dof(double Px, double Py, double Pz, double a1, double a2, double a3, d
 - q[3][2] is an array of possible joint angles for the desired XYZ coordinate position.
 - There are two possible joint angle answers for each coordinate position in the workspace.
 */
-  //Calculate the Angle for Joint 1 (Thetha 1) 
+  // Calculate the Angle for Joint 1 (Thetha 1) 
   double q1 = atan2(Py, Px);
-  //Projection of Universal Frame on Target Frame
+  // Projection of Universal Frame on Target Frame in xy-plane
   double r  = sqrt(pow(Px,2) + pow(Py,2));
 
   //Intermediate parameters
@@ -69,4 +69,5 @@ void ik_3dof(double Px, double Py, double Pz, double a1, double a2, double a3, d
   q[1][1] = q2_d;
   q[2][1] = q3_d;
 }
+
 
