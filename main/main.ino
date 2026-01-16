@@ -10,9 +10,9 @@
 #define F3_pin 7
 
 // Link Lengths of all the joins in centimeters
-const int a1 = 3;         // May vary
+const int a1 = 3;         // Varies for different link lengths
 const int a2 = 13;
-const int a3 = 10;
+const int a3 = 27;
 
 // Target angles are where servo will move to.
 // Set to 5 degrees because of the nails and screws in the base.
