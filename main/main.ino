@@ -52,10 +52,10 @@ void loop()
 {
   Serial.println("Enter Positions (XYZ):");
   
-  //Used for the Input Command given via Serial Monitor
+  // Stop the program until user input is not present
   while (Serial.available() == 0) {}
 
-  //Read the x, y and z Coordinates from Serial Input
+  // Read the x, y and z Coordinates from Serial Input
   float x = Serial.parseFloat();
   float y = Serial.parseFloat();
   float z = Serial.parseFloat();
